@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from notion_client import Client
 from src.fetcher import FetchResult
 from src.enrichment import EnrichedItem
 from src.config import get_env
