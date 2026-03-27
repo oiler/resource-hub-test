@@ -31,3 +31,18 @@ def test_field_options_not_empty():
     options = get_field_options()
     for field, values in options.items():
         assert len(values) > 0, f"Field '{field}' has no options"
+
+
+def test_get_env_returns_value_when_set():
+    with patch.dict(os.environ, {"MY_TEST_VAR": "hello"}):
+        from src.config import get_env
+        assert get_env("MY_TEST_VAR") == "hello"
+
+
+def test_get_env_raises_when_missing():
+    # Ensure the var is not set
+    env = {k: v for k, v in os.environ.items() if k != "MY_MISSING_VAR"}
+    with patch.dict(os.environ, env, clear=True):
+        from src.config import get_env
+        with pytest.raises(ValueError, match="MY_MISSING_VAR"):
+            get_env("MY_MISSING_VAR")
