@@ -15,7 +15,6 @@ logger = logging.getLogger(__name__)
 app = App(
     token=get_env("SLACK_BOT_TOKEN"),
     signing_secret=get_env("SLACK_SIGNING_SECRET"),
-    token_verification_enabled=False,
 )
 
 notion_client = NotionClient(auth=get_env("NOTION_TOKEN"))
