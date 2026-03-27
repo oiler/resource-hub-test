@@ -1,0 +1,57 @@
+{
+  "type": [
+    "Case study",
+    "Course",
+    "Guide",
+    "Lecture/Talk",
+    "Map",
+    "Resource Hub",
+    "Slide Deck",
+    "Template",
+    "Tipsheet",
+    "Worksheet"
+  ],
+  "category": [
+    "Audience",
+    "Development",
+    "Earned Revenue",
+    "Hiring",
+    "Legal",
+    "Product and AI",
+    "Reader Revenue"
+  ],
+  "role": [
+    "For Audience managers",
+    "For Product and Tech teams",
+    "For Senior Leadership",
+    "For reporters and editors",
+    "For the Revenue team"
+  ],
+  "action": [
+    "Implement",
+    "Learn",
+    "Practice",
+    "Steal"
+  ],
+  "subcategory": [
+    "Advertising and sponsorships",
+    "Artificial Intelligence",
+    "Audience data",
+    "Audience development",
+    "Audience research",
+    "Audience revenue",
+    "Branding",
+    "Digital security",
+    "Hiring",
+    "Legal rights",
+    "Metrics",
+    "Newsletters",
+    "Personal leadership",
+    "Philanthropic support",
+    "Physical and physiological safety",
+    "Product development",
+    "Risk analysis",
+    "Social media",
+    "Strategy development"
+  ]
+}
