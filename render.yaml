@@ -3,7 +3,7 @@ services:
     name: resource-hub-intake
     env: python
     rootDir: code
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install .
     startCommand: python -m src.app
     envVars:
       - key: SLACK_BOT_TOKEN
